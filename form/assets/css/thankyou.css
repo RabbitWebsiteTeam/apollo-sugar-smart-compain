@@ -1,0 +1,48 @@
+body {
+background-color:#eaeaea;
+height:100%;
+}
+#thanksec
+{
+background-color:#FFF;	
+padding:0;
+}
+#thanksec #topc{padding:3%;}
+.greenline{height:5px;background-color:#6fb424;width:100%;}
+.logot{display:block;}
+.logot img{margin:0 auto;}
+.tqblock{
+background-color: #20438f;
+    padding: 3%;
+    margin: 2% 0;
+    text-align: center;
+border-bottom:2px solid #6fb424;
+}
+.tqtext{color:#FFF;}
+.tdesc{font-size:16px;}
+.testdate {
+    padding: 2%;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+	position:relative;
+}
+.testhead {
+    position: absolute;
+    background-color: #004892;
+    color: #FFF;
+    top: 0;
+	left:0;
+	border-top-left-radius: 15px;
+}
+@media (max-width:500px){
+}
+
+@media (max-width: 768px){
+	
+	}
+@media (min-width: 1200px){
+
+}
+ 

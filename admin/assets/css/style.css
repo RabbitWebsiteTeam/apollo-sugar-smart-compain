@@ -1,0 +1,16 @@
+@charset "utf-8";
+#topc {
+    padding-bottom: 2%;
+}
+#topc img {
+    max-width: 78%;
+}
+#center-table td{width:35%;padding-bottom:3%}
+td.dlbtn{text-align:center;}
+td.dlbtn input[type=submit], td.dlbtn input[type=button]{background-color: #ff0000;color: #FFF;border: 1px solid #ccc;}
+#branch-table td{width:35%;padding-bottom:3%}
+.reportstab td, .reportstab th{width:9%;}
+.downb {
+    float: right;
+    padding: 1%;
+}

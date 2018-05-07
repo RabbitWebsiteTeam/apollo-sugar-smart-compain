@@ -126,6 +126,25 @@ if(empty($login_id)){
 	$mob_location = $mobContent['location'];
 	$mob_carrier = $mobContent['carrier'];
 	$mob_line_type = $mobContent['line_type'];
+	
+	//send sms
+	
+	$ms = "Dear $fullname, Greetings from Apollo Sugar Clinics. Thank you for attending our Diabetes Screening Camp.Your RBS levels  are $sugar mg/dl and BMI $cal . To know more, please missed call 08033507134 To manage your diabetes better, download our unique Diabetes Mobile App here: http://bit.ly/2llWu4N ";
+
+	$mss = urlencode($ms);
+				$runfile = "https://lms.icebergnetworks.in/api//DynamSMS.php?username=apollosc&password=asc8765&from=APSUGR&text=".$mss."&to=".$mobile."";
+
+	$ch1 = curl_init();
+    curl_setopt($ch1, CURLOPT_URL, $runfile);
+
+    curl_setopt ($ch1, CURLOPT_RETURNTRANSFER, 1);
+
+     $conte = curl_exec ($ch1);
+	//exit;
+    curl_close ($ch1);
+
+	
+	//end send sms
 
 	 if(!empty($fullname)){    
 				
